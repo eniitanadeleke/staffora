@@ -5,17 +5,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "npx serve out",
-    "lint": "next lint"
+    "start": "npx serve out"
   },
   "dependencies": {
     "@fontsource/merriweather": "^5.1.0",
     "@fontsource/noto-sans": "^5.1.0",
     "lucide-react": "^0.525.0",
     "motion": "^12.23.12",
-    "next": "15.3.5",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "next": "16.4.2",
+    "react": "19.2.9",
+    "react-dom": "19.2.9"
   },
   "devDependencies": {
     "@types/node": "^22",
