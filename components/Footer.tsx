@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { site, nav } from "@/lib/site";
 import { services } from "@/lib/content";
-import { LinkedInIcon, InstagramIcon } from "./Social";
+import { socialLinks } from "./Social";
 
 export default function Footer() {
   return (
@@ -13,8 +13,9 @@ export default function Footer() {
           <p className="site-footer__tag">{site.tagline}</p>
           <p>Staffora Global helps growing businesses build the structure, people and systems they need to perform, grow and scale sustainably.</p>
           <div className="socials">
-            {site.linkedin && <a href={site.linkedin} target="_blank" rel="noopener" aria-label="Staffora on LinkedIn"><LinkedInIcon /></a>}
-            {site.instagram && <a href={site.instagram} target="_blank" rel="noopener" aria-label="Staffora on Instagram"><InstagramIcon /></a>}
+            {socialLinks.map(({ key, label, href, Icon }) => (
+              <a key={key} href={href} target="_blank" rel="noopener" aria-label={`Staffora on ${label}`}><Icon /></a>
+            ))}
           </div>
         </div>
         <div>

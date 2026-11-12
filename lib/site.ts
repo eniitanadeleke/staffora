@@ -14,7 +14,10 @@ export const site = {
   phone: "+2349043612329",
   phoneDisplay: "+234 904 361 2329",
 
-  linkedin: "https://www.linkedin.com/company/stafforaglobalconsulting", // TODO: confirm URL
+  // Social profiles. Leave any empty ("") to hide it everywhere on the site.
+  linkedin: "https://www.linkedin.com/company/staffora-global/",
+  facebook: "https://www.facebook.com/share/1EEoxnKhqy/",
+  tiktok: "https://www.tiktok.com/@stafforaglobalconsulting",
   instagram: "", // TODO: e.g. "https://www.instagram.com/stafforaglobal"
 
   // TODO: office address (also used for Google/local SEO)
